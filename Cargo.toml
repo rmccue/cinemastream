@@ -1,0 +1,17 @@
+[package]
+name = "cinemastream"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.78"
+# asciinema = { path = "vendor/asciinema" }
+asciinema = { git = "https://github.com/rmccue/asciinema.git", branch = "rust-lib" }
+aws-config = { version = "1.1.1", features = ["behavior-version-latest"] }
+aws-sdk-cloudwatchlogs = "1.9.0"
+clap = { version = "4.4.12", features = ["derive"] }
+cloudwatch_logging = "1.0.0"
+lazy_static = "1.4.0"
+tokio = "1.35.1"
